@@ -19,5 +19,5 @@ more_movies = [
 ]
 
 more_movies.each do |movie|
-  Movie.find_or_create!(movie)
+  Movie.find_or_create_by!(movie)
 end
