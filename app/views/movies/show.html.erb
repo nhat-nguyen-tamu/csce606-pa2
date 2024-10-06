@@ -2,7 +2,6 @@
 
 <h1>About movie</h1>
 
-
 <div id="movies">
   <table>
     <tbody>
@@ -16,7 +15,7 @@
       </tr>
       <tr id="<%= dom_id @movie %>" class="movie_display">
         <td class="list_header">Releast Date</td>
-        <td><%= @movie.release_date %></td>
+        <td><%= @movie.release_date.strftime("%B %e, %Y") %></td>
       </tr>
     </tbody>
     <tfoot>

@@ -1,6 +1,6 @@
 <tr id="<%= dom_id movie %>" class="movie_display">
   <td class="<%= sort_column == 'title' ? 'active_column_' + sort_direction : '' %>"><%= movie.title %></td>
   <td class="<%= sort_column == 'rating' ? 'active_column_' + sort_direction : '' %>"><%= movie.rating %></td>
-  <td class="<%= sort_column == 'release_date' ? 'active_column_' + sort_direction : '' %>"><%= movie.release_date.strftime("%B %e, %Y") %></td>
+  <td class="<%= sort_column == 'release_date' ? 'active_column_' + sort_direction : '' %>"><%= movie.release_date.strftime("%b %e, %Y") %></td>
   <td><%= link_to "Show", movie %></td>
 </tr>
