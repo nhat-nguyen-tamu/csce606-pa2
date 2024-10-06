@@ -2,10 +2,16 @@
 
 <h1>New movie</h1>
 
-<%= render "form", movie: @movie %>
+<div id="movies">
+  <%= render "form", movie: @movie %>
+</div>
 
-<br>
-
-<div>
-  <%= link_to "Back to movies", movies_path %>
+<div id="movies">
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <td colspan="1"><%= link_to "Back to movies", movies_path, class: "btn" %></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
